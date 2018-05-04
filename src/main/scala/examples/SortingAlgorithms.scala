@@ -17,17 +17,17 @@ class SortingAlgorithms {
 
   import examples.SortingAlgorithms.ArrayState
 
-  @Benchmark
+//  @Benchmark
   def testSelectionSort(state: ArrayState): Unit = {
     selectionSort(state.arr)
   }
 
-  @Benchmark
+//  @Benchmark
   def testBubbleSort(state: ArrayState): Unit = {
     bubbleSort(state.arr)
   }
 
-  @Benchmark
+//  @Benchmark
   def testMergeSort(state: ArrayState): Unit = {
     mergeSort(state.arr)
   }
