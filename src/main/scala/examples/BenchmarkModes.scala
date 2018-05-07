@@ -27,12 +27,12 @@ class BenchmarkModes {
   // @OutputTimeUnit(TimeUnit.MICROSECONDS)
   // def measureSingleShot(): Unit = TimeUnit.MILLISECONDS.sleep(100)
 
-  @Benchmark
+  //@Benchmark
   @BenchmarkMode(Array(Mode.Throughput, Mode.AverageTime, Mode.SampleTime, Mode.SingleShotTime))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   def measureMultiple(): Unit = TimeUnit.MILLISECONDS.sleep(100)
 
-  @Benchmark
+  //@Benchmark
   @BenchmarkMode(Array(Mode.All))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   def measureAll(): Unit = TimeUnit.MILLISECONDS.sleep(100)
