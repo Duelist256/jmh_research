@@ -12,7 +12,7 @@ class Loops {
   val x = 1
   val y = 2
 
-  @Benchmark
+//  @Benchmark
   def measureRight: Int = x + y
 
   private def reps(reps: Int): Int = {
